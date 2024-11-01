@@ -1,15 +1,6 @@
-jobDsl scriptText: 'job('first-try')' {
-    description('A simple job that echoes Hello, World!')
-    
+job('HelloWorldJob') {
+    description('A simple job that echoes Hello World')
     steps {
-        stages {
-            stage('Hello'){
-                steps {
-                    script {
-                        echo "Hello, World!"
-                    }
-                }
-            }
-        }
+        shell('echo "Hello World"')     
     }
 }
