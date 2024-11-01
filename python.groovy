@@ -1,4 +1,4 @@
-job('first-try') {
+pipelineJob('first-try') {
     description('A simple job that echoes Hello, World!')
     
     steps {
