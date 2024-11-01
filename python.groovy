@@ -1,4 +1,4 @@
-job('first-try') {
+jobDsl scriptText: 'job('first-try')' {
     description('A simple job that echoes Hello, World!')
     
     steps {
